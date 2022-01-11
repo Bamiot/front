@@ -1,0 +1,23 @@
+@mixin desktop {
+  @media (min-width: #{$desktop-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin button-style {
+  font-weight: bold;
+  text-align: center;
+  background-color: #e5e5e5;
+  &:hover {
+    background-color: #d5d5d5;
+  }
+}
+
+@mixin hover-zoom {
+  &:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+    background-color: #f6f6f6;
+  }
+}

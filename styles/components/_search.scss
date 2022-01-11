@@ -1,0 +1,44 @@
+.search-bar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 0.5em;
+  margin: 1em;
+  input {
+    padding: 0.5em;
+    width: 100%;
+  }
+  button {
+    padding: 0.5em;
+    position: absolute;
+    right: 5px;
+  }
+}
+
+.result-item {
+  position: relative;
+  height: 120px;
+  width: auto;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  li {
+    height: 100%;
+    width: 100%;
+  }
+  img {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    padding: 0.5rem;
+    h2 {
+      font-size: 1em;
+      margin: 0.5rem 0;
+    }
+  }
+  @include hover-zoom;
+}

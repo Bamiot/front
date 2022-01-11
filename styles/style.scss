@@ -1,0 +1,21 @@
+@import 'sass-utils/normalize';
+@import 'sass-utils/variables';
+@import 'sass-utils/mixins';
+@import 'sass-utils/functions';
+
+// components
+@import 'components/search';
+@import 'components/popup';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages
+@import 'pages/index';
+@import 'pages/playlists';
+
+body {
+  max-width: 920px;
+  margin: auto;
+}
